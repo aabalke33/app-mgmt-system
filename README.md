@@ -1,13 +1,16 @@
 # app-mgmt-system
-This is a basic Java-based GUI program to access an appointment management SQL database.
+This is a Java-based GUI program using JavaFX and MVC principles to access an appointment management SQL database.
 
-Allows for adding, modifying, and deleting appointments and customers. Also provides reporting tools for appointments by Contact, Type, Month, and Date.
+Allows for adding, modifying, and deleting appointments and customers. Also provides reporting tools for appointments by Contact, Type, Month, and Date. Has data validation and error-checking capabilities.
 
 ## Build Info
 
 IDE: IntelliJ IDEA 2023.1.2 (Community Edition)
+
 JDK: Java SE 17.0.7
+
 JavaFX: JavaFX-SDK-17.0.1
+
 MySQL Connector Driver: mysql-connector-java-8.0.26
 
 Instruction: Run the MainApp.java file to being the application. From there you will be prompted with a login page. The default login is username "test", and password "test".
