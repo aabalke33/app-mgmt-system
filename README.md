@@ -12,8 +12,6 @@ MySQL Connector Driver: mysql-connector-java-8.0.26
 
 Instruction: Run the MainApp.java file to being the application. From there you will be prompted with a login page. The default login is username "test", and password "test".
 
-Instruction A3F: The additional functionality of this program is the day/date report. This report allows you to filter appointments by date. Use the DatePicker at the top of the page to choose a date to filter the appointments by.
-
 ## Functionality
 ### Login Page
 
