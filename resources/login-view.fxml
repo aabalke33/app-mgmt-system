@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="bg" maxHeight="720.0" maxWidth="1280.0" minHeight="720.0" minWidth="1280.0" prefHeight="720.0" prefWidth="1280.0" styleClass="gradient-background" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="balke.c195.controller.LoginController">
+   <children>
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#f2f2f2" height="400.0" layoutX="440.0" layoutY="160.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" width="400.0" />
+      <Label fx:id="label" alignment="CENTER" contentDisplay="CENTER" layoutX="490.0" layoutY="229.0" prefWidth="300.0" text="Appointment&#10;Management System" textAlignment="CENTER" textFill="#545454">
+         <font>
+            <Font  size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userField" alignment="CENTER" layoutX="551.0" layoutY="329.0" promptText="Username" style="-fx-background-color: -fx-control-inner-background;">
+         <font>
+            <Font  size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="passwordField" alignment="CENTER" layoutX="551.0" layoutY="371.0" promptText="Password" style="-fx-background-color: -fx-control-inner-background;">
+         <font>
+            <Font  size="15.0" />
+         </font>
+      </TextField>
+      <Button fx:id="login" alignment="CENTER" contentDisplay="CENTER" layoutX="578.0" layoutY="425.0" mnemonicParsing="false" onAction="#loginClick" onMouseEntered="#loginHover" onMouseExited="#loginUnHover" prefWidth="125.0" style="-fx-background-color: #2bae91; -fx-border-width: 0; -fx-border-color: none;" text="Login" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font  size="15.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="langBox" layoutX="950.0" layoutY="670.0" nodeOrientation="RIGHT_TO_LEFT" prefWidth="90.0" style="-fx-background-color: transparent; -fx-border-width: 0; -fx-border-color: none" value="English">
+
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="English" />
+               <String fx:value="Français" />
+            </FXCollections>
+         </items>
+       </ChoiceBox>
+      <Label fx:id="zone" layoutX="1100.0" layoutY="675.0" text="zone" textFill="WHITE">
+         <font>
+            <Font  size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,109 @@
+.gradient-background {
+    -fx-background-color: linear-gradient(to bottom, #4ab0a1, #2f6e89);
+}
+
+.choice-box {
+   -fx-backgroundcolor: white;
+   -fx-control-inner-background: white;
+   -fx-selection-bar: white;
+   -fx-border-width: 0;
+   -fx-border-color: none;
+}
+.choice-box .arrow {
+    -fx-background-color: white;
+}
+
+.choice-box .menu-item .label{
+    -fx-text-fill: #545454;
+}
+
+.choice-box .label {
+     -fx-text-fill: white;
+     -fx-font-size: 15;
+}
+
+.menu-bar {
+    -fx-text-fill: #545454;
+}
+.menu:hover, .menu-bar, .menu-item:focused {
+    -fx-background-color: #2f6e89;
+}
+
+.table-view .column-header {
+    -fx-background-color: #2f6e89;
+    -fx-background-radius: 0;
+    -fx-border-width: 1px;
+    -fx-border-color: white;
+}
+.table-view .column-header .label {
+    -fx-text-fill: white;
+}
+
+{
+	-fx-primary-color: #4ab0a1;
+	-fx-secondary-color: #2f6e89;
+	-fx-light-grey-color: #f2f2f2;
+    -fx-dark-grey-color: #545454;
+	-fx-focus-color: -fx-secondary-color;
+}
+.date-picker {
+	-fx-background-color: white;
+	-fx-background-radius: 0;
+	-fx-border-color: white;
+	-fx-border-radius: 0;
+	-fx-border-width: 0;
+	-fx-font-size: 15;
+	-fx-border-color: white;
+}
+.date-picker .arrow-button {
+	-fx-background-color: -fx-primary-color;
+	-fx-background-radius: 0;
+}
+.date-picker .arrow-button .arrow {
+	-fx-background-color: white;
+}
+.date-picker .cell {
+	-fx-background-color: white;
+	-fx-font-color: #545454;
+}
+.date-picker .cell:hover {
+	-fx-background-color: #545454;
+	-fx-font-color: -fx-light-grey-color;
+}
+.date-picker .selected {
+	-fx-background-color: -fx-primary-color;
+	-fx-text-fill: white;
+}
+.date-picker .selected:focused {
+	-fx-background-color: -fx-primary-color;
+	-fx-text-fill: white;
+}
+.date-picker-popup  {
+	-fx-border-color: transparent;
+
+}
+.date-picker-popup .month-year-pane {
+	-fx-background-color: -fx-primary-color;
+}
+.date-picker-popup .month-year-pane .label {
+	-fx-text-fill: white;
+}
+.date-picker-popup .week-number-cell {
+	-fx-text-fill: -fx-secondary-color;
+}
+.date-picker-popup .spinner .button .left-arrow,
+.date-picker-popup .spinner .button .right-arrow {
+	-fx-background-color: white;
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: #b2b2b2;
+    -fx-prompt-text-fill: #b2b2b2;
+}
+.combo-box .list-view .list-cell {
+    -fx-text-fill: #545454;
+    -fx-prompt-text-fill: #545454;
+}
+.combo-box .arrow-button .arrow{
+	-fx-background-color: #b2b2b2;
+}

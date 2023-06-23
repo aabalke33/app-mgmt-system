@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="bg" maxHeight="720.0" maxWidth="1280.0" minHeight="720.0" minWidth="1280.0" prefHeight="720.0" prefWidth="1280.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="balke.c195.controller.ReportsTypeController">
+   <children>
+      <Label fx:id="label" contentDisplay="CENTER" layoutX="14.0" layoutY="32.0" prefWidth="400.0" text="Appointments by Type Report" textFill="#4ab0a1">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <MenuBar fx:id="menuBar" style="-fx-background-color: #f2f2f2; -fx-border-width: 0; -fx-border-color: none; -fx-font-size: 15">
+         <menus>
+            <Menu mnemonicParsing="false" text="View">
+               <items>
+                  <MenuItem fx:id="apps" mnemonicParsing="false" onAction="#appsClick" text="Appointments" />
+                  <MenuItem fx:id="customers" mnemonicParsing="false" onAction="#customersClick" text="Customers" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Button fx:id="logout" alignment="CENTER" contentDisplay="CENTER" layoutX="1160.0" mnemonicParsing="false" onAction="#logoutClick" onMouseEntered="#logoutHover" onMouseExited="#logoutUnHover" prefWidth="120.0" style="-fx-background-color: #f2f2f2; -fx-background-radius: 0;" text="Logout" textAlignment="CENTER" textFill="#545454">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="typeField" layoutX="460.0" layoutY="32.0" onAction="#typeAction" onMouseClicked="#typeClick" prefWidth="340.0" promptText="Type" style="-fx-background-color: white; -fx-background-radius: 5; -fx-border-color: white; -fx-border-width: 0; -fx-border-radius: 0; -fx-font-size: 15px; -fx-border-color: white; -fx-text-fill: f2f2f2; -fx-font-color: white; -fx-prompt-text-fill: b2b2b2;" stylesheets="@stylesheet.css" />
+      <TableView fx:id="appsTable" layoutY="80.0" prefHeight="640.0" prefWidth="1280.0" style="-fx-background-color: #f2f2f2; -fx-border-width: 0; -fx-border-color: none; -fx-font-size: 12">
+         <columns>
+            <TableColumn fx:id="appIdCol" maxWidth="80.0" minWidth="80.0" prefWidth="80.0" text="App ID" />
+            <TableColumn fx:id="titleCol" prefWidth="160.0" text="Title" />
+            <TableColumn fx:id="descriptionCol" prefWidth="160.0" text="Description" />
+            <TableColumn fx:id="locactionCol" prefWidth="120.0" text="Location" />
+            <TableColumn fx:id="contactCol" prefWidth="160.0" text="Contact" />
+            <TableColumn fx:id="typeCol" prefWidth="120.0" text="Type" />
+            <TableColumn fx:id="startDateCol" maxWidth="80.0" minWidth="80.0" text="Start Date" />
+            <TableColumn fx:id="startTimeCol" maxWidth="80.0" minWidth="80.0" prefWidth="80.0" text="Start Time" />
+            <TableColumn fx:id="endDateCol" maxWidth="80.0" minWidth="80.0" text="End Date" />
+            <TableColumn fx:id="endTimeCol" maxWidth="80.0" minWidth="80.0" prefWidth="80.0" text="End Time" />
+            <TableColumn fx:id="customerIdCol" maxWidth="80.0" minWidth="80.0" prefWidth="80.0" text="Customer ID" />
+            <TableColumn fx:id="userIdCol" maxWidth="80.0" minWidth="80.0" prefWidth="80.0" text="User ID" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

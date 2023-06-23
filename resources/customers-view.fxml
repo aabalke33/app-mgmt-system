@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="bg" maxHeight="720.0" maxWidth="1280.0" minHeight="720.0" minWidth="1280.0" prefHeight="720.0" prefWidth="1280.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="balke.c195.controller.CustomersController">
+    <children>
+        <Label fx:id="label" contentDisplay="CENTER" layoutX="14.0" layoutY="32.0" prefWidth="400.0" text="Customers (All)" textFill="#4ab0a1">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <MenuBar fx:id="menuBar" style="-fx-background-color: #f2f2f2; -fx-border-width: 0; -fx-border-color: none; -fx-font-size: 15">
+            <menus>
+                <Menu mnemonicParsing="false" text="Customers">
+                    <items>
+                        <MenuItem fx:id="addCust" mnemonicParsing="false" onAction="#addCustClick" text="Add Customer" />
+                        <MenuItem fx:id="modCust" mnemonicParsing="false" onAction="#modCustClick" text="Modify Selected" />
+                        <MenuItem fx:id="delCust" mnemonicParsing="false" onAction="#delCustClick" text="Delete Selected" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="View">
+                    <items>
+                        <MenuItem fx:id="apps" mnemonicParsing="false" onAction="#appsClick" text="Appointments" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <Button fx:id="logout" alignment="CENTER" contentDisplay="CENTER" layoutX="1160.0" mnemonicParsing="false" onAction="#logoutClick" onMouseEntered="#logoutHover" onMouseExited="#logoutUnHover" prefWidth="120.0" style="-fx-background-color: #f2f2f2; -fx-background-radius: 0;" text="Logout" textAlignment="CENTER" textFill="#545454">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <TableView fx:id="customerTable" layoutY="80.0" prefHeight="640.0" prefWidth="1280.0" style="-fx-background-color: #f2f2f2; -fx-border-width: 0; -fx-border-color: none; -fx-font-size: 12">
+            <columns>
+                <TableColumn fx:id="customerIdCol" maxWidth="80.0" minWidth="80.0" prefWidth="80.0" resizable="false" text="Customer ID" />
+                <TableColumn fx:id="nameCol" maxWidth="300.0" minWidth="300.0" prefWidth="300.0" resizable="false" text="Name" />
+                <TableColumn fx:id="addressCol" prefWidth="420.0" resizable="false" text="Address" />
+                <TableColumn fx:id="divisionCol" prefWidth="160.0" resizable="false" text="Division" />
+                <TableColumn fx:id="countryCol" prefWidth="80.0" resizable="false" text="Country" />
+                <TableColumn fx:id="postalCol" prefWidth="80.0" resizable="false" text="Postal" />
+                <TableColumn fx:id="phoneCol" prefWidth="160.0" resizable="false" text="Phone Number" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
