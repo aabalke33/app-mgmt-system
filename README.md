@@ -14,6 +14,9 @@ JavaFX: JavaFX-SDK-17.0.1
 MySQL Connector Driver: mysql-connector-java-8.0.26
 
 Instruction: Run the MainApp.java file to being the application. From there you will be prompted with a login page. The default login is username "test", and password "test".
+## Youtube Video Breakdown
+
+[<img src="https://user-images.githubusercontent.com/22086435/249031262-6046a95e-bd5f-485b-beba-60b34e1a9c7e.jpg" width="50%">](https://www.youtube.com/watch?v=2H9uRx9bGd8)
 
 ## Functionality
 ### Login Page
